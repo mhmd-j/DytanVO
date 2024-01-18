@@ -325,3 +325,13 @@ def tartan2kitti(traj):
         new_traj.append(ttt[:3,:].reshape(12))
         
     return np.array(new_traj)
+
+def eulers2qauts(eulers):
+    '''
+    eulers: N x 3
+    quats: N x 4
+    '''
+    quats = np.zeros((eulers.shape[0],4))
+    for i in range(eulers.shape[0]):
+        quats[i,:] = R.from_euler('xyz', eulers[i,:], degrees=False).as_quat()
+    return quats

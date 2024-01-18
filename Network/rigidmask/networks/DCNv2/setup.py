@@ -13,7 +13,8 @@ from setuptools import find_packages
 from setuptools import setup
 
 requirements = ["torch", "torchvision"]
-
+print(torch.__version__)
+print(torch.__file__)
 
 def get_extensions():
     this_dir = os.path.dirname(os.path.abspath(__file__))

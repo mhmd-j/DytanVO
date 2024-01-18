@@ -1,0 +1,7 @@
+# ninja log v5
+0	2570	1705012394	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-3.9/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_im2col_cpu.o	8b62b7cbf23743e8
+0	2889	1705012394	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-3.9/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_cpu.o	cfd65bdac9b7b5ba
+0	3014	1705012394	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-3.9/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_psroi_pooling_cpu.o	5305f920b10cb52
+0	9790	1705012401	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-3.9/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cuda/dcn_v2_im2col_cuda.o	c7768187963cfedb
+0	9937	1705012401	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-3.9/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cuda/dcn_v2_psroi_pooling_cuda.o	3a7cdc6ecfc78b57
+1	10546	1705012402	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-3.9/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/vision.o	ec8b1a1202ca16b4

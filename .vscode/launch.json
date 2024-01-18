@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "Debug: setup.py",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/Network/rigidmask/networks/DCNv2/setup.py",
+        //     "console": "integratedTerminal",
+        //     "justMyCode": true,
+        //     "args": [
+        //         "install"
+        //     ]
+        // },
+        {
+            "name": "Debug: kitti",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/vo_trajectory_from_folder.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--vo-model-name", "vonet.pkl",
+                "--seg-model-name", "segnet-kitti.pth",
+                "--kitti", "--kitti-intrinsics-file", "data/DynaKITTI/00_1/calib.txt",
+                "--test-dir", "data/DynaKITTI/00_1/image_2",
+                "--pose-file", "data/DynaKITTI/00_1/pose_left.txt",
+                "--iter-num", "2",
+                "--save-flow"
+            ]
+        },
+        {
+            "name": "Debug: airdos",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/vo_trajectory_from_folder.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--flow-model-name", "flownet.pkl",
+                "--pose-model-name", "posenet.pkl",
+                "--seg-model", "segnet-sf.pth",
+                "--airdos",
+                "--test-dir", "data/AirDOS_shibuya/Standing01/image_0",
+                "--pose-file", "data/AirDOS_shibuya/Standing01/gt_pose.txt"
+            ]
+        },
+        {
+            "name": "Debug: ros",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/vo_trajectory_from_folder.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--vo-model-name", "vonet.pkl",
+                "--seg-model-name", "segnet-kitti.pth",
+                "--ros",
+                "--iter-num", "2",
+                "--worker-num", "5"
+            ]
+        }
+    ]
+}
+    

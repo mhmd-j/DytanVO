@@ -165,6 +165,30 @@ class ToTensor(object):
 
         return sample
 
+class OnlineTraj(object):
+    """This classed is supposed to plot the trajectory online but it is not working yet
+    #TODO: fix this class
+
+    Args:
+        object (_type_): _description_
+    """
+    def __init__(self, title=''):
+        self.x_data = []
+        self.y_data = []
+        self.title = title
+        plt.ion()  # Turn on interactive mode
+        self.fig, self.ax = plt.subplots()
+
+    def update_plot(self, motionlist):
+        npmotions = np.array(motionlist)
+        self.x_data = npmotions[:,0]
+        self.y_data = npmotions[:,1]
+        self.ax.clear()
+        self.ax.plot(self.x_data, self.y_data)
+        plt.draw()
+        plt.show()
+        # Clear old data and plot new data
+
 def tensor2img(tensImg,mean,std):
     """
     convert a tensor a numpy array, for visualization
@@ -269,6 +293,9 @@ def dataset_intrinsics(dataset='tartanair', is_15mm=False):
     elif dataset == 'commaai':
         focalx, focaly, centerx, centery = 910.0, 910.0, 582.0, 437.0
         baseline = 1
+    elif dataset == 'ros':
+        focalx, focaly, centerx, centery = 480.0, 480.0, 480.0, 270.0
+        baseline = 1
     else:
         return None
     return focalx, focaly, centerx, centery, baseline
@@ -286,11 +313,20 @@ def plot_traj(gtposes, estposes, vis=False, savefigname=None, title=''):
     plt.ylabel('y (m)')
     plt.legend(['Ground Truth','TartanVO'])
     plt.title(title)
+
+    # ax = fig.add_subplot(111, projection='3d')
+    # ax.plot(gtposes[:,0],gtposes[:,1],gtposes[:,2], c='k')
+    # ax.plot(estposes[:, 0], estposes[:, 1], estposes[:, 2],c='#ff7f0e')
+    # ax.set_xlabel('x (m)')
+    # ax.set_ylabel('y (m)')
+    # ax.set_zlabel('z (m)')
+    # ax.legend(['Ground Truth','TartanVO'])
+    # ax.set_title(title)
     if savefigname is not None:
         plt.savefig(savefigname)
     if vis:
         plt.show()
-    plt.close(fig)
+    plt.close(fig)    
 
 def make_intrinsics_layer(w, h, fx, fy, ox, oy):
     ww, hh = np.meshgrid(range(w), range(h))

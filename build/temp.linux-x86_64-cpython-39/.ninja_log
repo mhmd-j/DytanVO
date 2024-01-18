@@ -1,0 +1,12 @@
+# ninja log v5
+0	2394	1705014294	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_im2col_cpu.o	6a2e57b4a1dc8a29
+0	2737	1705014294	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_cpu.o	9bd73386f34463d2
+0	2774	1705014294	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_psroi_pooling_cpu.o	4fb2a7134a73c563
+0	9827	1705014301	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/vision.o	ee6e3a3e5a4c6c17
+1	1654	1705085589	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_im2col_cpu.o	aba1c12f7c7cdbc6
+1	1878	1705085589	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_cpu.o	349cda9bc62ecc4
+2	1974	1705085589	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cpu/dcn_v2_psroi_pooling_cpu.o	a049a1b2daac79e2
+2	6619	1705085594	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cuda/dcn_v2_im2col_cuda.o	d3665a597ac5b264
+2	6669	1705085594	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cuda/dcn_v2_cuda.o	700dc58deb25f72e
+2	6739	1705085594	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/cuda/dcn_v2_psroi_pooling_cuda.o	36add52980a0fb56
+2	9381	1705085596	/home/rosen/mhmd/vslam_ws/DytanVO/build/temp.linux-x86_64-cpython-39/home/rosen/mhmd/vslam_ws/DytanVO/Network/rigidmask/networks/DCNv2/DCN/src/vision.o	370d6d8b91233aa
